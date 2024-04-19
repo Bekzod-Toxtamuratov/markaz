@@ -29,9 +29,11 @@ export class LidService {
   findAll() {
     return this.lidRepo.find({
 
+      
       relations:{
-       lid_status_id:true
+        lid_status_id:true
       }
+     
     }
     );
   }
